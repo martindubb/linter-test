@@ -1,0 +1,12 @@
+{
+  "name": "github-linter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "file1.js",
+  "scripts": {
+    "test": "jest"
+  },  
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
