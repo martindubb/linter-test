@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
@@ -19,8 +19,9 @@ jobs:
 
   echo-something:
     runs-on: ubuntu-latest
+    needs: lint-and-test
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
     - name: list repo content
       run: ls ${{ github.workspace }}
